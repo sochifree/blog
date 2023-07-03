@@ -1,0 +1,22 @@
+
+<%- include ('./include/header') %>
+
+<%- include ('./include/nav') %>
+
+<div class="create-blog">
+    <form action="/blogs" method="POST">
+        <label for="title">Blog Title</label>
+        <input type="text" id="title" name="title" required>
+        
+        <label for="Snippet">Blog Snippet</label>
+        <input type="text" id="Snippet" name="Snippet" required>
+        
+        <label for="body">Blog Body</label>
+        <textarea id="title" name="body" required></textarea>
+        
+        <button>Submit</button>
+    </form>
+</div>
+
+
+<%- include ('./include/footer') %>

@@ -1,0 +1,23 @@
+<%- include ('./include/header') %>
+
+<%- include ('./include/nav') %>
+
+
+
+<div class="blog-content">
+    <h2>All Blogs</h2>
+
+    <% if (blogs.length > 0) { %> 
+      <% blogs.forEach(blog => {%>
+    
+        <h3 class="title"><%= blog.title %> </h3>
+        <p class="snippet"><%= blog.Snippet %> </p>
+
+      <% }) %>
+    <% }else { %>
+        <p>There are no Blogs to display</p>
+    <% } %> 
+</div>
+
+
+<%- include ('./include/footer') %>
